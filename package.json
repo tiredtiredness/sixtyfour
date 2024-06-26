@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "./",
+  "homepage": "https://tiredtiredness.github.io/sixtyfour/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
