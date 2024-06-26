@@ -8,5 +8,6 @@ import './normalize.css';
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
-  </BrowserRouter>
+  </BrowserRouter>,
+  document.getElementById('root')
 );
