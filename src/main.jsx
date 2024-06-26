@@ -5,9 +5,8 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import './normalize.css';
 
-ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <App />
-  </BrowserRouter>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
