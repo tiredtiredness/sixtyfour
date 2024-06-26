@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "homepage": "https://tiredtiredness.github.io/sixtyfour",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "dev": "vite",
