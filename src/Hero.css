@@ -1,0 +1,82 @@
+.hero {
+  padding: 0 15px;
+  z-index: -1;
+}
+
+button {
+  padding: 10px;
+  background-color: #b9805d;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  background-color: #fff;
+  color: #b9805d;
+  outline: 1px solid #1e415e;
+}
+
+button:hover {
+  background: #fff;
+  color: #b9805d;
+  outline: 1px solid #b9805d;
+}
+
+button > a {
+  color: white;
+}
+
+p {
+  text-align: center;
+}
+
+.slider-container {
+  z-index: -10;
+}
+
+.phone-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+}
+
+.phone-btn:hover .phone-btn__link {
+  background-color: white;
+  color: transparent;
+  text-shadow: 0 0 0 #b9805d;
+}
+
+.phone-btn__link {
+  z-index: 1000;
+  font-size: 2rem;
+  color: transparent;
+  text-shadow: 0 0 0 white;
+}
+.phone-btn__link:hover {
+  color: transparent;
+  text-shadow: 0 0 0 #b9805d;
+}
+
+.phone-btn:hover {
+  transform: rotate(20deg) scale(1.05);
+  transition: transform ease-in-out 0.2s;
+  color: transparent;
+  text-shadow: 0 0 0 white;
+}
+
+img {
+  height: 70vh;
+}
+
+@media (max-width: 550px) {
+}
+@media (max-width: 800px) {
+}
+@media (max-width: 1200px) {
+}

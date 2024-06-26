@@ -1,0 +1,24 @@
+.reserve-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.reserve-form input,
+.reserve-form textarea {
+  max-width: 300px;
+  outline: 1px solid #b9805d;
+  border: 0;
+  padding: 5px;
+}
+
+.reserve-form input:focus,
+.reserve-form textarea:focus {
+  outline: 1px solid #1e415e;
+  outline-offset: 0;
+}
+
+.reserve-form textarea#comment {
+  height: 100px;
+}
