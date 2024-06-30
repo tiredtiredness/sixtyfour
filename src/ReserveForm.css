@@ -17,6 +17,7 @@
   padding: 5px;
   font-size: 16px;
   font-family: 'Montserrat', serif;
+  background-color: #fff;
 }
 
 .reserve-form input:focus,
@@ -33,9 +34,4 @@
   margin-top: 10px;
   font-size: 16px;
   font-family: 'Montserrat', serif;
-}
-
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
-  opacity: 1;
 }
