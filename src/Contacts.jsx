@@ -9,7 +9,6 @@ export default function Contacts() {
           src='https://yandex.ru/map-widget/v1/?um=constructor%3A339e1d711423d64d5305b008dbd851e19bd90e6df4751e11432ede015e14bb9f&amp;source=constructor'
           width='560'
           height='600'
-          frameBorder='0'
         ></iframe>
       </div>
       <div className='contacts__wrapper'>
@@ -27,7 +26,7 @@ export default function Contacts() {
               className='social__link'
             >
               <img
-                src='src/images/icons/instagram-alt-svgrepo-com.svg'
+                src='/images/icons/instagram-alt-svgrepo-com.svg'
                 alt=''
                 className='social__img'
               />
@@ -38,7 +37,7 @@ export default function Contacts() {
               className='social__link'
             >
               <img
-                src='src/images/icons/telegram-svgrepo-com.svg'
+                src='/images/icons/telegram-svgrepo-com.svg'
                 alt=''
                 className='social__img'
               />
@@ -49,7 +48,7 @@ export default function Contacts() {
               className='social__link'
             >
               <img
-                src='src/images/icons/vk-svgrepo-com.svg'
+                src='/images/icons/vk-svgrepo-com.svg'
                 alt=''
                 className='social__img'
               />

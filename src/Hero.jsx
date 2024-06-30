@@ -1,7 +1,4 @@
-import { useState, useEffect } from 'react';
-import Slider from 'react-slick';
 import './Hero.css';
-import ReserveForm from './ReserveForm';
 
 export default function Content() {
   return (
@@ -16,7 +13,7 @@ export default function Content() {
         </a>
       </button>
       <div>
-        <img className='hero__img' src='./src/images/w0n5bArwFRs.jpg' alt='' />
+        <img className='hero__img' src='/images/w0n5bArwFRs.jpg' alt='' />
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ export default function About() {
           </div>
           <div className='section__wrapper'>
             <img
-              src='src/images/s_9FJKtDRak.jpg'
+              src='/images/s_9FJKtDRak.jpg'
               alt=''
               className='section__img'
             />
@@ -41,7 +41,7 @@ export default function About() {
 
           <div className='section__wrapper'>
             <video className='section__video' autoPlay='autoplay' loop muted>
-              <source src='src/images/video_8IfhNil.mp4' />
+              <source src='/images/video_8IfhNil.mp4' />
             </video>
           </div>
         </section>
@@ -61,7 +61,7 @@ export default function About() {
 
           <div className='section__wrapper'>
             <img
-              src='src/images/0twGg6fJZjo.jpg'
+              src='/images/0twGg6fJZjo.jpg'
               alt=''
               className='section__img'
             />
@@ -87,7 +87,7 @@ export default function About() {
 
           <div className='section__wrapper'>
             <img
-              src='src/images/iAxHMm2gaYg.jpg'
+              src='/images/iAxHMm2gaYg.jpg'
               alt=''
               className='section__img'
             />
@@ -110,7 +110,7 @@ export default function About() {
 
           <div className='section__wrapper'>
             <img
-              src='src/images/n0ak-x1AEew.jpg'
+              src='/images/n0ak-x1AEew.jpg'
               alt=''
               className='section__img'
             />
@@ -132,7 +132,7 @@ export default function About() {
 
           <div className='section__wrapper'>
             <img
-              src='src/images/MbSmfRsAZC0.jpg'
+              src='/images/MbSmfRsAZC0.jpg'
               alt=''
               className='section__img'
             />

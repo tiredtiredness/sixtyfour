@@ -33,7 +33,7 @@ export default function Header() {
               </li>
               <li className='menu-list__item'>
                 <a
-                  href='src/images/ТЗ по React.pdf'
+                  href='/images/ТЗ по React.pdf'
                   className='menu-list__link'
                 >
                   Меню
@@ -71,12 +71,12 @@ export default function Header() {
         <button className='btn--menu' onClick={toggleMenu}>
           <img
             id='open-menu'
-            src='src/images/icons/burger-menu-svgrepo-com-2.svg'
+            src='/images/icons/burger-menu-svgrepo-com-2.svg'
             alt=''
           />
           <img
             id='close-menu'
-            src='src/images/icons/close-svgrepo-com.svg'
+            src='/images/icons/close-svgrepo-com.svg'
             alt=''
             className='hidden'
           />
