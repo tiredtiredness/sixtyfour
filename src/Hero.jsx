@@ -6,7 +6,7 @@ import ReserveForm from './ReserveForm';
 export default function Content() {
   return (
     <div className='hero'>
-      <p>
+      <p className='hero__desc'>
         Ресторан европейской кухни с панорамным видом на исторический центр
         Петербурга. Насладитесь гастрономическим уютом с нами!
       </p>
@@ -16,12 +16,8 @@ export default function Content() {
         </a>
       </button>
       <div>
-        <img src='src/images/0twGg6fJZjo.jpg' alt='' />
-        <img src='src/images/jRYorlyOFWA.jpg' alt='' />
-        <img src='src/images/n0ak-x1AEew.jpg' alt='' />
-        <img src='src/images/s_9FJKtDRak.jpg' alt='' />
+        <img className='hero__img' src='src/images/w0n5bArwFRs.jpg' alt='' />
       </div>
-      <ReserveForm></ReserveForm>
     </div>
   );
 }

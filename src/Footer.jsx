@@ -3,7 +3,7 @@ import './Footer.css';
 export default function Footer() {
   return (
     <>
-      <p>HYPE'S GROUP</p>
+      <p className='footer__desc'>HYPE'S GROUP</p>
     </>
   );
 }

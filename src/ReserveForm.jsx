@@ -5,14 +5,14 @@ export default function ReserveForm() {
     <>
       <div className='form-wrapper'>
         <form action='' className='reserve-form'>
-          <h1>Заявка на бронь</h1>
+          <h3 className='form__title'>Заявка на бронь</h3>
           <input
             type='text'
             name='name'
             id='name'
             required
             placeholder='Ваше имя'
-            maxlength='70'
+            maxLength='70'
           />
           <input
             type='tel'
@@ -46,7 +46,9 @@ export default function ReserveForm() {
             min='1'
           />
           <textarea name='comment' id='comment'></textarea>
-          <button type='submit'>Заявка на бронь</button>
+          <button className='reserve-form__submit-btn' type='submit'>
+            Отправить
+          </button>
         </form>
       </div>
     </>

@@ -1,27 +1,53 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 export default function Header() {
-  let isSideOpen,
-    setIsSideOpen = useState(false);
+  const [isSideOpen, setIsSideOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsSideOpen(!isSideOpen);
+    document.querySelector('.menu-wrapper').classList.toggle('closed');
+    document.getElementById('open-menu').classList.toggle('hidden');
+    document.getElementById('close-menu').classList.toggle('hidden');
+  };
 
   return (
     <>
       <header className='header'>
         <div className='header__logo'>
-          <span>SIXTY FOUR</span>
+          <NavLink to='/'>SIXTY FOUR</NavLink>
         </div>
-        <div className='menu-wrapper'>
-          <menu className='menu'>
+        <div className='menu-wrapper closed'>
+          <menu className='menu '>
             <ul className='menu-list'>
               <li className='menu-list__item'>
-                <a href=''>О нас</a>
+                <NavLink
+                  className='menu-list__link'
+                  href=''
+                  to='about'
+                  onClick={toggleMenu}
+                >
+                  О нас
+                </NavLink>
               </li>
               <li className='menu-list__item'>
-                <a href=''>Меню</a>
+                <a
+                  href='src/images/ТЗ по React.pdf'
+                  className='menu-list__link'
+                >
+                  Меню
+                </a>
               </li>
               <li className='menu-list__item'>
-                <a href=''>Контакты</a>
+                <NavLink
+                  className='menu-list__link'
+                  href=''
+                  to='contacts'
+                  onClick={toggleMenu}
+                >
+                  Контакты
+                </NavLink>
               </li>
             </ul>
             <a
@@ -31,14 +57,29 @@ export default function Header() {
             >
               Оставить отзыв
             </a>
-            <button className='header__btn btn--reserve'>
-              Забронировать стол
-            </button>
+            <NavLink
+              className='menu-list__link link--btn'
+              href=''
+              to='reserve'
+              onClick={toggleMenu}
+            >
+              Забронировать
+            </NavLink>
           </menu>
         </div>
 
-        <button className='btn--menu'>
-          <img src='src/images/icons/burger-menu-svgrepo-com-2.svg' alt='' />
+        <button className='btn--menu' onClick={toggleMenu}>
+          <img
+            id='open-menu'
+            src='src/images/icons/burger-menu-svgrepo-com-2.svg'
+            alt=''
+          />
+          <img
+            id='close-menu'
+            src='src/images/icons/close-svgrepo-com.svg'
+            alt=''
+            className='hidden'
+          />
         </button>
       </header>
     </>

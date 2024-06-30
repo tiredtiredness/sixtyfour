@@ -11,7 +11,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   position: sticky;
   color: #b9805d;
 }
@@ -21,9 +21,11 @@ a:hover {
   align-items: center;
   font-weight: 600;
   font-size: 1.5rem;
+  z-index: 1;
 }
 
 .menu {
+  margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
@@ -45,6 +47,8 @@ a:hover {
 .header__btn {
   height: 100%;
   color: white;
+  font-size: 16px;
+  font-family: 'Montserrat', serif;
 }
 
 .btn--feedback {
@@ -53,10 +57,13 @@ a:hover {
 
 .btn--menu {
   display: none;
-  background: white;
   position: absolute;
-  top: 17px;
-  right: 20px;
+  right: 24px;
+  background: white;
+  height: 27px;
+  width: 27px;
+  align-self: center;
+  justify-self: center;
 }
 
 .btn--menu:hover {
@@ -64,31 +71,67 @@ a:hover {
 }
 
 .btn--menu img {
-  height: 30px;
+  position: absolute;
+  height: 27px;
+  transition: all ease-in-out 0.5s;
 }
 
-@media (max-width: 550px) {
+.hidden {
+  opacity: 0;
+}
+
+.link--btn {
+  padding: 10px;
+  background-color: #b9805d;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.link--btn:hover {
+  background-color: transparent;
+  color: #b9805d;
+  outline: 1px solid #b9805d;
+}
+
+@media (max-width: 800px) {
+  .header {
+    justify-content: space-between;
+  }
   .menu-wrapper {
+    display: flex;
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.95);
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+  }
+  .closed {
+    top: 100vh;
+    bottom: -150vh;
   }
   .menu {
     flex-direction: column;
-    text-align: center;
   }
 
   .menu-list {
     flex-direction: column;
     margin-bottom: 20px;
+    text-align: center;
   }
+  .menu-list__item {
+    justify-content: center;
+  }
+
   .header__logo {
     margin-top: 20px;
   }
   .btn--menu {
-    display: block;
+    display: flex;
   }
   .btn--feedback {
     margin-right: 0;

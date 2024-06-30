@@ -5,12 +5,18 @@
   gap: 10px;
 }
 
+.form__title {
+  color: #1e415e;
+}
+
 .reserve-form input,
 .reserve-form textarea {
   max-width: 300px;
   outline: 1px solid #b9805d;
   border: 0;
   padding: 5px;
+  font-size: 16px;
+  font-family: 'Montserrat', serif;
 }
 
 .reserve-form input:focus,
@@ -21,4 +27,10 @@
 
 .reserve-form textarea#comment {
   height: 100px;
+}
+
+.reserve-form__submit-btn {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Montserrat', serif;
 }
