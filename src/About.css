@@ -1,5 +1,6 @@
 .about {
   padding: 0 15px;
+  scroll-behavior: smooth;
 }
 
 .about__section {
@@ -40,6 +41,10 @@
   align-self: center;
 }
 
+.section__scroll-btn {
+  width: 40px;
+}
+
 @media (max-width: 500px) {
   .about__section:nth-child(2n-1) {
     flex-flow: row;
@@ -50,8 +55,6 @@
   .section__wrapper {
     width: auto;
     padding: 20px;
-  }
-  .section__title {
     text-align: center;
   }
   .section__desc {
@@ -61,6 +64,9 @@
   .section__video {
     max-height: 90vh;
     width: auto;
+  }
+  a .section__scroll-btn {
+    text-align: center;
   }
 }
 

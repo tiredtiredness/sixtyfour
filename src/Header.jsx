@@ -8,6 +8,7 @@ export default function Header() {
   const toggleMenu = () => {
     setIsSideOpen(!isSideOpen);
     document.querySelector('.menu-wrapper').classList.toggle('closed');
+    document.querySelector('body').classList.toggle('closed--body');
     document.getElementById('open-menu').classList.toggle('hidden');
     document.getElementById('close-menu').classList.toggle('hidden');
   };
@@ -16,8 +17,15 @@ export default function Header() {
     <>
       <img src='/images/landing_background_x2' alt='' className='bg-img' />
       <div className='intro'>
-        <h1 className='intro__title'>SIXTY FOUR</h1>
-        <p className='intro__desc'>Здесь уютно и тепло!</p>
+        <img
+          src='/images/landing_background_x2'
+          alt=''
+          className='intro__img'
+        />
+        <div className='intro__wrapper'>
+          <h1 className='intro__title'>SIXTY FOUR</h1>
+          <p className='intro__desc'>Здесь уютно и тепло!</p>
+        </div>
       </div>
       <header className='header'>
         <div className='header__logo'>

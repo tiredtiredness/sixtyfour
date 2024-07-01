@@ -1,9 +1,17 @@
+
 .hero {
+  position: relative;
   padding: 0 15px;
   z-index: -1;
 }
 
-.hero__desc {
+.hero__title {
+  /* position: absolute;
+  top: 40%;
+  left: 30px;
+  width: 40%;
+  font-weight: 600;
+  text-shadow: 0 0 10px #000; */
   text-align: center;
 }
 

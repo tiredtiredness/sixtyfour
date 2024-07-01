@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <div className='about'>
-        <section className='about__section'>
+        <section id='atmosphere' className='about__section'>
           <div className='section__wrapper'>
             <h2 className='section__title'>Наша атмосфера и сервис</h2>
             <p className='section__desc'>
@@ -18,6 +18,13 @@ export default function About() {
               чтобы вы могли любоваться Мойкой и прекрасными старинными зданиями
               вокруг.
             </p>
+            <a href='#location'>
+              <img
+                src='images/arrow-down-svgrepo-com.svg'
+                alt=''
+                className='section__scroll-btn'
+              />
+            </a>
           </div>
           <div className='section__wrapper'>
             <img
@@ -27,7 +34,7 @@ export default function About() {
             />
           </div>
         </section>
-        <section className='about__section'>
+        <section id='location' className='about__section'>
           <div className='section__wrapper'>
             <h2 className='section__title'>Расположение</h2>
             <p className='section__desc'>
@@ -37,6 +44,13 @@ export default function About() {
               площадь и Мариинский дворец. Здесь случаются незабываемые свидания
               с городом.
             </p>
+            <a href='#menu'>
+              <img
+                src='images/arrow-down-svgrepo-com.svg'
+                alt=''
+                className='section__scroll-btn'
+              />
+            </a>
           </div>
 
           <div className='section__wrapper'>
@@ -51,7 +65,7 @@ export default function About() {
             </video>
           </div>
         </section>
-        <section className='about__section'>
+        <section id='menu' className='about__section'>
           <div className='section__wrapper'>
             <h2 className='section__title'>Меню ресторана</h2>
             <p className='section__desc'>
@@ -63,6 +77,13 @@ export default function About() {
               по французским мотивам, осьминог с нутом — в стиле
               средиземноморской кухни.
             </p>
+            <a href='#bar'>
+              <img
+                src='images/arrow-down-svgrepo-com.svg'
+                alt=''
+                className='section__scroll-btn'
+              />
+            </a>
           </div>
 
           <div className='section__wrapper'>
@@ -73,7 +94,7 @@ export default function About() {
             />
           </div>
         </section>
-        <section className='about__section'>
+        <section id='bar' className='about__section'>
           <div className='section__wrapper'>
             <h2 className='section__title'>Бар</h2>
             <p className='section__desc'>
@@ -89,6 +110,13 @@ export default function About() {
               элегантностью и изысканностью, обладая нотками цитрусовых и белых
               цветов.
             </p>
+            <a href='#events'>
+              <img
+                src='images/arrow-down-svgrepo-com.svg'
+                alt=''
+                className='section__scroll-btn'
+              />
+            </a>
           </div>
 
           <div className='section__wrapper'>
@@ -99,7 +127,7 @@ export default function About() {
             />
           </div>
         </section>
-        <section className='about__section'>
+        <section id='events' className='about__section'>
           <div className='section__wrapper'>
             <h2 className='section__title'>Мероприятия и банкеты</h2>
             <p className='section__desc'>
@@ -112,6 +140,13 @@ export default function About() {
               учитывая все ваши пожелания, чтобы каждый гость остался доволен.
               Каждый банкет становится незабываемым событием!
             </p>
+            <a href='#catering'>
+              <img
+                src='images/arrow-down-svgrepo-com.svg'
+                alt=''
+                className='section__scroll-btn'
+              />
+            </a>
           </div>
 
           <div className='section__wrapper'>
@@ -122,7 +157,7 @@ export default function About() {
             />
           </div>
         </section>
-        <section className='about__section'>
+        <section id='catering' className='about__section'>
           <div className='section__wrapper'>
             <h2 className='section__title'>Кейтеринг</h2>
             <p className='section__desc'>
@@ -134,6 +169,13 @@ export default function About() {
               себя особенным, наслаждаясь не только изысканной кухней, но и
               высочайшим уровнем обслуживания.
             </p>
+            <a href='#'>
+              <img
+                src='images/arrow-down-svgrepo-com.svg'
+                alt=''
+                className='section__scroll-btn'
+              />
+            </a>
           </div>
 
           <div className='section__wrapper'>

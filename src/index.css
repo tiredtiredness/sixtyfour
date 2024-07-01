@@ -3,11 +3,8 @@
 :root {
   font-family: 'Montserrat', serif !important;
   font-weight: 400;
-
   box-sizing: border-box;
-
   color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -16,4 +13,18 @@
 
 p {
   color: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.closed--body {
+  overflow: scroll;
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow: hidden;
+  }
 }

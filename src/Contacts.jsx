@@ -18,7 +18,7 @@ export default function Contacts() {
             г. Санкт-Петербург, наб. реки Мойки, 64
           </p>
           <p className='contacts__phone'>+7 (911) 000-64-00</p>
-          <p className='contacts__hours'>Пн-Вс 12:00 - 23:00</p>
+          <p className='contacts__hours'>Часы работы: ежедневно, 12:00–23:00</p>
           <p className='contacts__email'>Почта:</p>
           <div className='contacts__socials'>
             <a
