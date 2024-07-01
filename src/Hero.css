@@ -66,12 +66,7 @@ button > a {
   text-shadow: 0 0 0 white;
 }
 
-.hero_wrapper {
-  position: relative;
-}
-
 .hero__img {
-  position: absolute;
   width: 100vw;
 }
 
