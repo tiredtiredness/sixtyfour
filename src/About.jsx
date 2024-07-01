@@ -40,7 +40,13 @@ export default function About() {
           </div>
 
           <div className='section__wrapper'>
-            <video className='section__video' autoPlay='autoplay' loop muted>
+            <video
+              className='section__video'
+              autoPlay='autoplay'
+              loop
+              muted
+              playsInline
+            >
               <source src='/images/video_8IfhNil.mp4' />
             </video>
           </div>

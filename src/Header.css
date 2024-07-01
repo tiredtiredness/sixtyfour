@@ -7,6 +7,90 @@ a:hover {
   color: #1e415e;
 }
 
+.bg-img {
+  position: fixed;
+  left: 0;
+  top: -250px;
+  filter: opacity(10%);
+  z-index: -100;
+  animation: intro-bg 2s ease-out;
+}
+
+.intro {
+  position: absolute;
+  top: 0;
+  left: 100vw;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: intro-text 2s ease-out;
+  display: flex;
+  opacity: 0;
+  box-shadow: 0 0 1px #1e415e;
+}
+
+.intro__title {
+  margin: 0;
+  font-size: 4em;
+  text-align: center;
+  text-shadow: 0 0 10px #000;
+}
+
+.intro__desc {
+  font-size: 1.8em;
+  color: white;
+  text-shadow: 0 0 10px #000;
+}
+
+@keyframes intro-bg {
+  0% {
+    filter: blur(10px);
+    filter: opacity(100%);
+    z-index: 10;
+  }
+  60% {
+    filter: blur(10px);
+    filter: opacity(100%);
+    z-index: 10;
+  }
+  95% {
+    filter: none;
+    filter: opacity(10%);
+    z-index: 0;
+  }
+  100% {
+    filter: none;
+    filter: opacity(10%);
+    z-index: 0;
+  }
+}
+
+@keyframes intro-text {
+  0% {
+    left: 0;
+    display: flex;
+    opacity: 1;
+    z-index: 11;
+  }
+  60% {
+    left: 0;
+    display: flex;
+    opacity: 1;
+    z-index: 11;
+  }
+  95% {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    left: 0;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -59,7 +143,7 @@ a:hover {
   display: none;
   position: absolute;
   right: 24px;
-  background: white;
+  background: transparent;
   height: 27px;
   width: 27px;
   align-self: center;
@@ -68,6 +152,7 @@ a:hover {
 
 .btn--menu:hover {
   outline: none;
+  background: transparent;
 }
 
 .btn--menu img {

@@ -45,7 +45,11 @@ export default function ReserveForm() {
             placeholder='Количество гостей'
             min='1'
           />
-          <textarea name='comment' id='comment'></textarea>
+          <textarea
+            name='comment'
+            id='comment'
+            placeholder='Комментарий'
+          ></textarea>
           <button className='reserve-form__submit-btn' type='submit'>
             Отправить
           </button>

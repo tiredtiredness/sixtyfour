@@ -12,8 +12,8 @@ export default function Content() {
           📞
         </a>
       </button>
-      <div>
-        <img className='hero__img' src='/images/w0n5bArwFRs.jpg' alt='' />
+      <div className='hero__wrapper'>
+        <img className='hero__img first' src='/images/w0n5bArwFRs.jpg' alt='' />
       </div>
     </div>
   );

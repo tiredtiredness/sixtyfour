@@ -14,6 +14,11 @@ export default function Header() {
 
   return (
     <>
+      <img src='/images/landing_background_x2' alt='' className='bg-img' />
+      <div className='intro'>
+        <h1 className='intro__title'>SIXTY FOUR</h1>
+        <p className='intro__desc'>Здесь уютно и тепло!</p>
+      </div>
       <header className='header'>
         <div className='header__logo'>
           <NavLink to='/'>SIXTY FOUR</NavLink>
@@ -32,10 +37,7 @@ export default function Header() {
                 </NavLink>
               </li>
               <li className='menu-list__item'>
-                <a
-                  href='/images/ТЗ по React.pdf'
-                  className='menu-list__link'
-                >
+                <a href='#' className='menu-list__link'>
                   Меню
                 </a>
               </li>
