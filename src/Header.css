@@ -18,8 +18,8 @@ a:hover {
 
 .intro {
   position: absolute;
-  top: 0;
-  left: 100vw;
+  top: -100vh;
+  left: 0;
   width: 100%;
   height: 100vh;
   flex-direction: column;
@@ -69,25 +69,25 @@ a:hover {
 
 @keyframes intro-text {
   0% {
-    left: 0;
+    top: 0;
     display: flex;
     opacity: 1;
     z-index: 11;
   }
   60% {
-    left: 0;
+    top: 0;
     display: flex;
     opacity: 1;
     z-index: 11;
   }
-  95% {
+  90% {
     display: none;
     opacity: 0;
     z-index: -1;
-    left: 0;
+    top: 0;
   }
   100% {
-    left: 100vw;
+    top: -100vh;
   }
 }
 
