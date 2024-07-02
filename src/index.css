@@ -24,7 +24,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: url(public/images/bg-main.jpg);
+  background-image: url(/images/bg-main.jpg);
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
