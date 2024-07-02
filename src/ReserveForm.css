@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .form__title {

@@ -15,8 +15,7 @@ export default function Header() {
 
   return (
     <>
-      <img src='/images/landing_background_x2' alt='' className='bg-img' />
-      <div className='intro'>
+      {/* <div className='intro'>
         <img
           src='/images/landing_background_x2'
           alt=''
@@ -26,7 +25,7 @@ export default function Header() {
           <h1 className='intro__title'>SIXTY FOUR</h1>
           <p className='intro__desc'>Здесь уютно и тепло!</p>
         </div>
-      </div>
+      </div> */}
       <header className='header'>
         <div className='header__logo'>
           <NavLink to='/'>SIXTY FOUR</NavLink>

@@ -1,3 +1,15 @@
 .footer__desc {
+  width: 100%;
   text-align: center;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.footer__desc--absolute {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
 }

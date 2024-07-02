@@ -2,8 +2,8 @@ import './Footer.css';
 
 export default function Footer() {
   return (
-    <>
-      <p className='footer__desc'>© Sixty Four, HYPE'S GROUP</p>
-    </>
+    <footer>
+      <p className='footer__desc--absolute'>© Sixty Four, HYPE'S GROUP</p>
+    </footer>
   );
 }

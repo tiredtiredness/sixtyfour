@@ -1,5 +1,4 @@
 .about {
-  padding: 0 15px;
   scroll-behavior: smooth;
 }
 
@@ -25,8 +24,13 @@
   padding: calc(2em + 19px) 50px 50px 50px;
 }
 
+.section__wrapper:first-child {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 .section__title {
   color: #1e415e;
+  margin-bottom: 10px;
 }
 
 .section__desc {
@@ -57,6 +61,7 @@
     padding: 20px;
     text-align: center;
   }
+
   .section__desc {
     text-align: justify;
   }

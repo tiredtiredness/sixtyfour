@@ -55,6 +55,7 @@ export default function ReserveForm() {
           </button>
         </form>
       </div>
+      <p className='footer__desc'>© Sixty Four, HYPE'S GROUP</p>
     </>
   );
 }
