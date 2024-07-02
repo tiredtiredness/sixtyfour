@@ -248,9 +248,6 @@ a:hover {
     justify-content: center;
   }
 
-  .header__logo {
-    margin-top: 20px;
-  }
   .btn--menu {
     display: flex;
   }
