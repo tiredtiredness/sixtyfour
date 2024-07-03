@@ -1,19 +1,5 @@
 body {
   overflow: scroll;
-  animation: intro 3s linear;
-  animation-iteration-count: 1;
-}
-
-@keyframes intro {
-  0% {
-    overflow: hidden;
-  }
-  95% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: auto;
-  }
 }
 
 .intro {

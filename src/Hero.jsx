@@ -6,7 +6,7 @@ export default function Hero() {
     <>
       <div className='hero'>
         <div className='hero__wrapper'>
-          <p className='hero__title'>РЕСТОРАН ЕВРОПЕЙСКОЙ КУХНИ</p>
+          <h1 className='hero__title'>РЕСТОРАН ЕВРОПЕЙСКОЙ КУХНИ</h1>
           <p className='hero__desc'>
             с панорамным видом на исторический центр Петербурга. <br />{' '}
             Насладитесь гастрономическим уютом с нами!
@@ -24,7 +24,63 @@ export default function Hero() {
           </a>
         </button>
       </div>
-      <Footer className='footer'></Footer>
+      <div className='gallery'>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/1.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/2.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/3.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/4.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/5.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/6.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/7.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/8.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/9.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/10.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/11.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/12.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/13.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/14.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/15.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/16.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/17.jpg' alt='' />
+        </div>
+        <div className='gallery__wrapper'>
+          <img className='gallery__img' src='/images/gallery/18.jpg' alt='' />
+        </div>
+      </div>
+      <p className='footer__desc'>© Sixty Four, HYPE'S GROUP</p>
     </>
   );
 }

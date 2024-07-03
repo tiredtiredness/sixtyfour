@@ -4,16 +4,11 @@
 }
 
 .hero__wrapper {
-  position: absolute;
-  top: 54px;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: calc(100vh - 69px);
   display: flex;
   justify-content: center;
   flex-direction: column;
   z-index: 0;
-  padding: 15px;
 }
 
 .hero__title {
@@ -98,9 +93,33 @@ button > a {
   width: 100%;
 }
 
-@media (max-width: 550px) {
+.gallery {
+  padding: 15px;
+  width: 100%;
+  columns: 5;
+  column-gap: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.gallery__wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+.gallery__img {
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    columns: 3;
+  }
 }
 @media (max-width: 800px) {
+  .gallery {
+    columns: 2;
+  }
 }
-@media (max-width: 1200px) {
+@media (max-width: 550px) {
 }

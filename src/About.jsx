@@ -23,7 +23,7 @@ export default function About() {
             </p>
             <a href='#location'>
               <img
-                src='images/arrow-down-svgrepo-com.svg'
+                src='images/icons/arrow-down-svgrepo-com.svg'
                 alt=''
                 className='section__scroll-btn'
               />
@@ -31,7 +31,7 @@ export default function About() {
           </div>
           <div className='section__wrapper'>
             <img
-              src='/images/s_9FJKtDRak.jpg'
+              src='/images/about/s_9FJKtDRak.jpg'
               alt=''
               className='section__img'
             />
@@ -49,7 +49,7 @@ export default function About() {
             </p>
             <a href='#menu'>
               <img
-                src='images/arrow-down-svgrepo-com.svg'
+                src='images/icons/arrow-down-svgrepo-com.svg'
                 alt=''
                 className='section__scroll-btn'
               />
@@ -64,7 +64,7 @@ export default function About() {
               muted
               playsInline
             >
-              <source src='/images/video_8IfhNil.mp4' />
+              <source src='/images/about/video_8IfhNil.mp4' />
             </video>
           </div>
         </section>
@@ -82,7 +82,7 @@ export default function About() {
             </p>
             <a href='#bar'>
               <img
-                src='images/arrow-down-svgrepo-com.svg'
+                src='images/icons/arrow-down-svgrepo-com.svg'
                 alt=''
                 className='section__scroll-btn'
               />
@@ -91,7 +91,7 @@ export default function About() {
 
           <div className='section__wrapper'>
             <img
-              src='/images/0twGg6fJZjo.jpg'
+              src='/images/about/0twGg6fJZjo.jpg'
               alt=''
               className='section__img'
             />
@@ -103,19 +103,13 @@ export default function About() {
             <p className='section__desc'>
               Мы обновили барную карту, в которой весенние ноты объединились с
               яркими вкусами. Вина, домашние настойки, коктейли, лимонады и
-              авторские чаи — всё, чтобы итальянские, французские и
-              средиземноморские блюда из нового меню открыли интересные грани.
-              Ценители изысканных напитков найдут великолепный выбор
+              авторские чаи — всё, чтобы блюда из нового меню открыли интересные
+              грани. Ценители изысканных напитков найдут великолепный выбор
               шампанского, включая такие легендарные марки, как Krug и Cristal.
-              Шампанское Krug, известное своим сложным и богатым вкусом,
-              идеально подходит для особых случаев и торжественных мероприятий.
-              Cristal, созданный Домом Louis Roederer, славится своей
-              элегантностью и изысканностью, обладая нотками цитрусовых и белых
-              цветов.
             </p>
             <a href='#events'>
               <img
-                src='images/arrow-down-svgrepo-com.svg'
+                src='images/icons/arrow-down-svgrepo-com.svg'
                 alt=''
                 className='section__scroll-btn'
               />
@@ -124,7 +118,7 @@ export default function About() {
 
           <div className='section__wrapper'>
             <img
-              src='/images/iAxHMm2gaYg.jpg'
+              src='/images/about/iAxHMm2gaYg.jpg'
               alt=''
               className='section__img'
             />
@@ -145,7 +139,7 @@ export default function About() {
             </p>
             <a href='#catering'>
               <img
-                src='images/arrow-down-svgrepo-com.svg'
+                src='images/icons/arrow-down-svgrepo-com.svg'
                 alt=''
                 className='section__scroll-btn'
               />
@@ -154,7 +148,7 @@ export default function About() {
 
           <div className='section__wrapper'>
             <img
-              src='/images/n0ak-x1AEew.jpg'
+              src='/images/about/n0ak-x1AEew.jpg'
               alt=''
               className='section__img'
             />
@@ -174,7 +168,7 @@ export default function About() {
             </p>
             <a href='#'>
               <img
-                src='images/arrow-down-svgrepo-com.svg'
+                src='images/icons/arrow-down-svgrepo-com.svg'
                 alt=''
                 className='section__scroll-btn'
               />
@@ -183,7 +177,7 @@ export default function About() {
 
           <div className='section__wrapper'>
             <img
-              src='/images/MbSmfRsAZC0.jpg'
+              src='/images/about/MbSmfRsAZC0.jpg'
               alt=''
               className='section__img'
             />

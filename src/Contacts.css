@@ -9,7 +9,7 @@
 
 .contacts__wrapper:last-child {
   background-color: rgba(255, 255, 255, 0.6);
-  margin: 15px 15px 0 0;
+  margin: 15px 15px 0 15px;
 }
 
 .contacts__map {
