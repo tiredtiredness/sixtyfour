@@ -121,12 +121,6 @@ button > a {
 }
 
 @media (max-width: 500px) {
-  body {
-    background-image: url(/images/bg-main.jpg);
-    background-size: 100px 100vh !important;
-    background-position: top center !important;
-    background-attachment: fixed !important;
-  }
 }
 
 .running-line__wrapper {
