@@ -4,14 +4,14 @@ import Footer from './Footer';
 export default function Hero() {
   return (
     <>
-      <div className='running-line__wrapper'>
+      {/* <div className='running-line__wrapper'>
         <a href='#' className='running-line' behavior='' direction=''>
           НОВОЕ МЕНЮ
         </a>
         <a href='#' className='running-line' behavior='' direction=''>
           НОВОЕ МЕНЮ
         </a>
-      </div>
+      </div> */}
       <div className='hero'>
         <div className='hero__wrapper'>
           <h1 className='hero__title'>РЕСТОРАН ЕВРОПЕЙСКОЙ КУХНИ</h1>
