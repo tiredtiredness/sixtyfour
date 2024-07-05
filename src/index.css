@@ -25,8 +25,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: url(/images/bg-main.jpg) no-repeat top center fixed;
-  background-size: cover;
+  /* background: url(/images/bg-main.jpg) no-repeat top center fixed;
+  background-size: cover; */
 }
 body.closed--body {
   overflow: scroll;
@@ -38,4 +38,11 @@ body.closed--body {
     height: 100dvh;
     background-attachment: fixed;
   }
+}
+
+.link--disabled {
+  cursor: not-allowed;
+}
+.link--disabled:hover {
+  color: #b9805d;
 }

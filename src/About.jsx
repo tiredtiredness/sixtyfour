@@ -170,7 +170,7 @@ export default function About() {
               <img
                 src='images/icons/arrow-down-svgrepo-com.svg'
                 alt=''
-                className='section__scroll-btn'
+                className='section__scroll-btn section__scroll-btn--last'
               />
             </a>
           </div>

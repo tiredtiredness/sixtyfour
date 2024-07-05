@@ -1,5 +1,5 @@
 .about {
-  margin: 15px;
+  margin: 15px 15px 0 15px;
   scroll-behavior: smooth;
 }
 
@@ -49,6 +49,24 @@
 .section__scroll-btn {
   margin-top: 10px;
   width: 40px;
+}
+
+.section__scroll-btn:hover {
+  transform: translateY(5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.section__scroll-btn--last:hover {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.section__scroll-btn:not(:hover) {
+  transition: transform 0.5s ease-out;
+}
+
+.about__footer {
+  margin-top: 0;
 }
 
 @media (max-width: 500px) {

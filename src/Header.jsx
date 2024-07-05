@@ -15,17 +15,6 @@ export default function Header() {
 
   return (
     <>
-      {/* <div className='intro'>
-        <img
-          src='/images/landing_background_x2'
-          alt=''
-          className='intro__img'
-        />
-        <div className='intro__wrapper'>
-          <h1 className='intro__title'>SIXTY FOUR</h1>
-          <p className='intro__desc'>Здесь уютно и тепло!</p>
-        </div>
-      </div> */}
       <header className='header'>
         <div className='header__logo'>
           <NavLink to='/'>SIXTY FOUR</NavLink>
@@ -44,9 +33,22 @@ export default function Header() {
                 </NavLink>
               </li>
               <li className='menu-list__item'>
-                <a href='#' className='menu-list__link'>
+                <a
+                  href='/osn.pdf'
+                  className='menu-list__link--menu menu-list__link'
+                >
                   Меню
                 </a>
+              </li>
+              <li className='menu-list__item'>
+                <NavLink
+                  className='menu-list__link'
+                  href=''
+                  to='news'
+                  onClick={toggleMenu}
+                >
+                  Новости
+                </NavLink>
               </li>
               <li className='menu-list__item'>
                 <NavLink
@@ -58,22 +60,26 @@ export default function Header() {
                   Контакты
                 </NavLink>
               </li>
+              <li className='menu-list__item'>
+                <a
+                  className='menu-list__link--review btn--feedback menu-list__link'
+                  href='https://yandex.ru/maps/org/sixty_four/180554432330/reviews/?add-review=true'
+                  target='_blank'
+                >
+                  Оставить отзыв
+                </a>
+              </li>
+              <li className='menu-list__item'>
+                <NavLink
+                  className='menu-list__link link--btn'
+                  href=''
+                  to='reserve'
+                  onClick={toggleMenu}
+                >
+                  Забронировать
+                </NavLink>
+              </li>
             </ul>
-            <a
-              className='btn--feedback'
-              href='https://yandex.ru/maps/org/sixty_four/180554432330/reviews/?add-review=true'
-              target='_blank'
-            >
-              Оставить отзыв
-            </a>
-            <NavLink
-              className='menu-list__link link--btn'
-              href=''
-              to='reserve'
-              onClick={toggleMenu}
-            >
-              Забронировать
-            </NavLink>
           </menu>
         </div>
 

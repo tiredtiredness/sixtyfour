@@ -154,15 +154,51 @@ a:hover {
   align-items: center;
 }
 
+.menu-list__link {
+  text-transform: uppercase;
+}
+
+.menu-list__link--menu {
+  position: relative;
+}
+
+.menu-list__link--menu:hover.menu-list__link--menu::after {
+  display: block;
+  opacity: 1;
+}
+
+.menu-list__link--menu::after {
+  content: 'pdf';
+  position: absolute;
+  opacity: 0;
+  left: 11px;
+  display: none;
+  font-size: 0.8em;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu-list__link--review::after {
+  content: 'в Яндекс Картах';
+  position: absolute;
+  opacity: 0;
+  left: 16px;
+  display: none;
+  font-size: 0.8em;
+  transition: opacity 0.3s ease-in-out;
+}
+.menu-list__link--review {
+  position: relative;
+}
+.menu-list__link--review:hover.menu-list__link--review::after {
+  display: block;
+  opacity: 1;
+}
+
 .header__btn {
   height: 100%;
   color: white;
   font-size: 16px;
   font-family: 'Montserrat', serif;
-}
-
-.btn--feedback {
-  margin-right: 20px;
 }
 
 .btn--menu {
