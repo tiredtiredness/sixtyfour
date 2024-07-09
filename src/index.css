@@ -4,7 +4,6 @@
   font-family: 'Montserrat', serif !important;
   font-weight: 400;
   box-sizing: border-box;
-  color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,8 +24,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: url(/images/bg-main.jpg) no-repeat top center fixed;
-  background-size: cover;
+  background-color: #b9805d;
 }
 body.closed--body {
   overflow: scroll;
@@ -35,8 +33,6 @@ body.closed--body {
 @media (max-width: 800px) {
   body {
     overflow: hidden;
-    height: 100dvh;
-    background-attachment: fixed;
   }
 }
 

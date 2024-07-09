@@ -1,18 +1,22 @@
 #background_wrap {
-  z-index: -1;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#background_wrap::before {
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  /* right: 0;
+  bottom: 0; */
+  height: 100vh;
+  width: 100vw;
+  /* -webkit-background-size: cover;
+  -prefix-background-size: cover; */
+  background: url('images/bg-main.jpg') no-repeat top center;
+  filter: brightness(0.7);
   background-size: cover;
-  background-image: url('images/bg-main.jpg');
-  background-position: top center;
-  background-attachment: fixed;
-}
-
-@media (max-width: 800px) {
-  #background_wrap {
-    background-attachment: fixed;
-  }
+  z-index: -1;
 }

@@ -1,4 +1,5 @@
 import './About.css';
+import 'animate.css';
 
 export default function About() {
   return (
@@ -170,7 +171,7 @@ export default function About() {
               <img
                 src='images/icons/arrow-down-svgrepo-com.svg'
                 alt=''
-                className='section__scroll-btn section__scroll-btn--last'
+                className='section__scroll-btn--last section__scroll-btn '
               />
             </a>
           </div>
@@ -184,7 +185,6 @@ export default function About() {
           </div>
         </section>
       </div>
-      <p className='footer__desc'>© Sixty Four, HYPE'S GROUP</p>
     </>
   );
 }

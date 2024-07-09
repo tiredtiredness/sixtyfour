@@ -9,8 +9,8 @@ export default function Header() {
     setIsSideOpen(!isSideOpen);
     document.querySelector('.menu-wrapper').classList.toggle('closed');
     document.querySelector('body').classList.toggle('closed--body');
-    document.getElementById('open-menu').classList.toggle('hidden');
-    document.getElementById('close-menu').classList.toggle('hidden');
+    document.getElementById('open-menu').classList.toggle('transparent');
+    document.getElementById('close-menu').classList.toggle('transparent');
   };
 
   return (
@@ -19,8 +19,8 @@ export default function Header() {
         <div className='header__logo'>
           <NavLink to='/'>SIXTY FOUR</NavLink>
         </div>
-        <div className='menu-wrapper closed'>
-          <menu className='menu '>
+        <div className='menu-wrapper closed '>
+          <menu className='menu'>
             <ul className='menu-list'>
               <li className='menu-list__item'>
                 <NavLink
@@ -40,7 +40,7 @@ export default function Header() {
                   Меню
                 </a>
               </li>
-              {/* <li className='menu-list__item'>
+              <li className='menu-list__item'>
                 <NavLink
                   className='menu-list__link'
                   href=''
@@ -49,7 +49,7 @@ export default function Header() {
                 >
                   Новости
                 </NavLink>
-              </li> */}
+              </li>
               <li className='menu-list__item'>
                 <NavLink
                   className='menu-list__link'
@@ -93,7 +93,7 @@ export default function Header() {
             id='close-menu'
             src='/images/icons/close-svgrepo-com.svg'
             alt=''
-            className='hidden'
+            className='transparent'
           />
         </button>
       </header>

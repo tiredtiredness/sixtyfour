@@ -1,0 +1,23 @@
+.news-item {
+    
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+}
+
+.news-item__title {
+  color: #1e415e;
+  margin-bottom: 10px;
+}
+
+.news-item__desc {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.news-item__date {
+  margin-bottom: 10px;
+}
+
+.news-item__img {
+  max-width: 100%;
+}

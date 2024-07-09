@@ -1,5 +1,5 @@
 import './Hero.css';
-import Footer from './Footer';
+import 'animate.css';
 
 export default function Hero() {
   return (
@@ -14,19 +14,23 @@ export default function Hero() {
       </div> */}
       <div className='hero'>
         <div className='hero__wrapper'>
-          <h1 className='hero__title'>РЕСТОРАН ЕВРОПЕЙСКОЙ КУХНИ</h1>
-          <p className='hero__desc'>
-            с панорамным видом на исторический центр Петербурга. <br />{' '}
-            Насладитесь гастрономическим уютом с нами!
-          </p>
-          <p className='hero__desc'>
-            Санкт-Петербург,&#32;
-            <span className='desc__wrap'>наб. реки Мойки, 64</span>
-          </p>
-          <p className='hero__desc'>Время работы: 12:00 — 23:00, ежедневно</p>
+          <h1 className='hero__title animate__animated animate__fadeInDown animate__slow'>
+            РЕСТОРАН ЕВРОПЕЙСКОЙ КУХНИ
+          </h1>
+          <div className='desc__wrapper animate__animated animate__fadeInUp animate__slow'>
+            <p className='hero__desc '>
+              с панорамным видом на исторический центр Петербурга. <br />{' '}
+              Насладитесь гастрономическим уютом с нами!
+            </p>
+            <p className='hero__desc'>
+              Санкт-Петербург,&#32;
+              <span className='desc__wrap'>наб. реки Мойки, 64</span>
+            </p>
+            <p className='hero__desc'>Время работы: 12:00 — 23:00, ежедневно</p>
+          </div>
         </div>
 
-        <button className='phone-btn'>
+        <button className='phone-btn animate__animated animate__fadeInRight animate__delay-1s animate__slow'>
           <a href='tel:+79110006400' className='phone-btn__link'>
             📞
           </a>
@@ -142,7 +146,6 @@ export default function Hero() {
           </video>
         </div>
       </div>
-      <p className='footer__desc'>© Sixty Four, HYPE'S GROUP</p>
     </>
   );
 }

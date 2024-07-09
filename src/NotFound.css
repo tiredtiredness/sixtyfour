@@ -1,0 +1,20 @@
+.error {
+  margin: 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.error__title {
+  padding: 50px;
+  text-align: center;
+  color: #1e415e;
+  font-size: 36px;
+}
+
+.error__desc {
+  width: calc(50vw);
+  margin: 0 auto;
+  padding: 20px 50px;
+  text-align: justify;
+  font-size: 16px;
+}

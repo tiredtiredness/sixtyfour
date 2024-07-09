@@ -2,110 +2,6 @@ body {
   overflow: scroll;
 }
 
-.intro {
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  width: 100vw;
-}
-
-.intro__img {
-  position: fixed;
-  left: 0;
-  bottom: 100vh;
-  filter: opacity(20%) brightness(0.4);
-  animation: intro-img 3s linear;
-  animation-iteration-count: 1;
-  opacity: 0;
-}
-
-@keyframes intro-img {
-  0% {
-    z-index: 10;
-    opacity: 1;
-    top: -250px;
-    filter: opacity(100%) brightness(0.4);
-  }
-  50% {
-    z-index: 10;
-    opacity: 1;
-    top: -250px;
-    bottom: auto;
-    filter: opacity(100%) brightness(0.4);
-  }
-  95% {
-    z-index: 10;
-    opacity: 0;
-    bottom: auto;
-    filter: opacity(20%) brightness(0.4);
-    top: -250px;
-  }
-  100% {
-    z-index: 10;
-    opacity: 0;
-    bottom: 100vh;
-    filter: opacity(20%) brightness(0.4);
-  }
-}
-
-.intro__wrapper {
-  position: absolute;
-  top: -120vh;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  overflow: scroll;
-  animation: intro-text 3s linear;
-  animation-iteration-count: 1;
-  z-index: 11;
-}
-
-.intro__title {
-  margin: 0;
-  font-size: 4em;
-  text-align: center;
-  text-shadow: 0 0 10px #000;
-}
-
-.intro__desc {
-  font-size: 1.8em;
-  color: white;
-  text-shadow: 0 0 10px #000;
-}
-
-@keyframes intro-text {
-  0% {
-    top: 0;
-    opacity: 1;
-  }
-  50% {
-    top: 0;
-    opacity: 1;
-  }
-  95% {
-    top: 0;
-    opacity: 0;
-  }
-  100% {
-    top: -120vh;
-    opacity: 0;
-  }
-}
-
-.bg-img {
-  position: fixed;
-  left: 0;
-  top: -250px;
-  filter: blur(5px) hue-rotate(0deg);
-  z-index: -100;
-}
-
 a {
   text-decoration: none;
   color: #b9805d;
@@ -171,7 +67,7 @@ a:hover {
   content: 'pdf';
   position: absolute;
   opacity: 0;
-  left: 11px;
+  left: 14.5px;
   display: none;
   font-size: 0.8em;
   transition: opacity 0.3s ease-in-out;
@@ -221,10 +117,14 @@ a:hover {
 .btn--menu img {
   position: absolute;
   height: 27px;
-  transition: all ease-in-out 0.5s;
+  transition: opacity ease-in-out 0.5s;
 }
 
 .hidden {
+  display: none;
+}
+
+.transparent {
   opacity: 0;
 }
 
@@ -268,6 +168,7 @@ a:hover {
     margin-bottom: 20px;
     text-align: center;
   }
+
   .menu-list__item {
     justify-content: center;
   }
@@ -275,6 +176,7 @@ a:hover {
   .btn--menu {
     display: flex;
   }
+
   .btn--feedback {
     margin-right: 0;
   }

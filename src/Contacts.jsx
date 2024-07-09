@@ -62,7 +62,6 @@ export default function Contacts() {
           </div>
         </div>
       </div>
-      <p className='footer__desc'>© Sixty Four, HYPE'S GROUP</p>
     </>
   );
 }
