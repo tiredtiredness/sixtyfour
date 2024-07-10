@@ -15,4 +15,5 @@
   background: url('/bg-main.jpg') no-repeat top center;
   filter: brightness(0.7);
   background-size: cover;
+  z-index: -1;
 }
