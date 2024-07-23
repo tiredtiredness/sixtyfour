@@ -11,6 +11,10 @@ import './Content.css';
 export default function Content() {
   return (
     <>
+    <div className="intro">
+      <div className="intro__left-side"></div>
+      <div className="intro__right-side"></div>
+    </div>
       <div id='background_wrap'></div>
       <main className='main'>
         <Routes>

@@ -14,10 +14,12 @@ export default function Hero() {
       </div> */}
       <div className='hero'>
         <div className='hero__wrapper'>
-          <h1 className='hero__title animate__animated animate__fadeInDown animate__slow'>
+          <h1 className='hero__title animate__animated animate__fadeInDown animate__delay-2s animate__slow'>
             РЕСТОРАН ЕВРОПЕЙСКОЙ КУХНИ
+            ЭТО ПОДДЕЛКА 
+            ЭТО НЕОФИЦИАЛЬНЫЙ САЙТ
           </h1>
-          <div className='desc__wrapper animate__animated animate__fadeInUp animate__slow'>
+          <div className='desc__wrapper animate__animated animate__fadeInUp animate__delay-2s animate__slow'>
             <p className='hero__desc '>
               с панорамным видом на исторический центр Петербурга. <br />{' '}
               Насладитесь гастрономическим уютом с нами!
@@ -30,7 +32,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <button className='phone-btn animate__animated animate__fadeInRight animate__delay-1s animate__slow'>
+        <button className='phone-btn animate__animated animate__fadeInRight animate__delay-4s animate__slow'>
           <a href='tel:+79110006400' className='phone-btn__link'>
             📞
           </a>

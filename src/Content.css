@@ -17,3 +17,77 @@
   background-size: cover;
   z-index: -1;
 }
+
+.intro {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  animation: intro-container 1s linear forwards;
+  animation-delay: 3s;
+}
+
+@keyframes intro-container {
+  from {
+    z-index: 10;
+  }
+  to {
+    z-index: -1;
+  }
+}
+
+.intro__left-side,
+.intro__right-side {
+  position: absolute;
+  width: 49.9%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.19);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+.intro__left-side {
+  left: 0;
+  animation: left-shift 3s linear forwards;
+  animation-delay: 1s;
+}
+
+.intro__right-side {
+  right: 0;
+  animation: right-shift 3s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes left-shift {
+  0% {
+    left: 0;
+    z-index: 10;
+  }
+  100% {
+    left: -50vw;
+    z-index: -1;
+  }
+}
+
+@keyframes right-shift {
+  0% {
+    right: 0;
+    z-index: 10;
+  }
+  100% {
+    right: -50vw;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro__left-side {
+    animation: left-shift 2.5s linear forwards;
+  }
+
+  .intro__right-side {
+    animation: right-shift 2.5s linear forwards;
+  }
+}

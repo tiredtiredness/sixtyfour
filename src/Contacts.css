@@ -45,6 +45,10 @@
   width: 30px;
 }
 
+.social__img:hover {
+  background: #1e415e;
+}
+
 @media (max-width: 1200px) {
   .contacts__info {
     margin: 0 auto;
