@@ -1,10 +1,11 @@
 .about {
-  margin: 15px 15px 0 15px;
+  margin: 0 15px 15px 15px;
   scroll-behavior: smooth;
 }
 
 .about__section {
   display: flex;
+  gap: 15px;
 }
 
 .about__section:nth-child(2n-1) {
@@ -17,7 +18,9 @@
 }
 
 .section__wrapper {
+  margin-top: 15px;
   width: 50%;
+  max-height: calc(100vh - 30px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,6 +29,9 @@
 
 .section__wrapper:first-child {
   background-color: rgba(255, 255, 255, 0.6);
+}
+.section__wrapper:last-child {
+  padding: 0;
 }
 
 .section__title {
@@ -40,10 +46,10 @@
 
 .section__img,
 .section__video {
-  max-width: 100%;
-  max-height: 75vh;
+  width: 100%;
+  max-height: 100%;
   object-fit: cover;
-  align-self: center;
+  object-position: center;
 }
 
 .section__scroll-btn {
@@ -78,11 +84,12 @@
   }
   .section__wrapper {
     width: auto;
+    margin-top: 15px;
     padding: 20px;
     text-align: center;
   }
   .section__wrapper:last-child {
-    padding: 20px 0;
+    margin-top: 0;
   }
 
   .section__desc {

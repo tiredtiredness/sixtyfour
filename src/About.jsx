@@ -38,6 +38,7 @@ export default function About() {
             />
           </div>
         </section>
+
         <section id='location' className='about__section'>
           <div className='section__wrapper'>
             <h2 className='section__title'>Расположение</h2>
@@ -56,7 +57,6 @@ export default function About() {
               />
             </a>
           </div>
-
           <div className='section__wrapper'>
             <video
               className='section__video'
@@ -69,6 +69,7 @@ export default function About() {
             </video>
           </div>
         </section>
+
         <section id='menu' className='about__section'>
           <div className='section__wrapper'>
             <h2 className='section__title'>Меню ресторана</h2>
@@ -89,15 +90,11 @@ export default function About() {
               />
             </a>
           </div>
-
           <div className='section__wrapper'>
-            <img
-              src='/images/about/0twGg6fJZjo.jpg'
-              alt=''
-              className='section__img'
-            />
+            <img src='/images/food.gif' alt='' className='section__img' />
           </div>
         </section>
+
         <section id='bar' className='about__section'>
           <div className='section__wrapper'>
             <h2 className='section__title'>Бар</h2>
@@ -116,7 +113,6 @@ export default function About() {
               />
             </a>
           </div>
-
           <div className='section__wrapper'>
             <img
               src='/images/about/iAxHMm2gaYg.jpg'
@@ -125,6 +121,7 @@ export default function About() {
             />
           </div>
         </section>
+
         <section id='events' className='about__section'>
           <div className='section__wrapper'>
             <h2 className='section__title'>Мероприятия и банкеты</h2>
@@ -155,6 +152,7 @@ export default function About() {
             />
           </div>
         </section>
+        
         <section id='catering' className='about__section'>
           <div className='section__wrapper'>
             <h2 className='section__title'>Кейтеринг</h2>

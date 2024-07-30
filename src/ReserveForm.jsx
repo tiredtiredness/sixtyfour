@@ -1,3 +1,4 @@
+import axios from 'axios';
 import './ReserveForm.css';
 import { useState } from 'react';
 
@@ -13,11 +14,16 @@ export default function ReserveForm() {
   function handleSubmit(e) {
     e.preventDefault();
     const form = e.target;
-    const formData = new FormData(form);
     const errors = form.querySelectorAll('.input__error:not(.hidden)');
     if (errors.length > 0) {
       return; // Если есть ошибки, не отправляем форму
     }
+    axios
+      .post('/api/sendmail', name, phone, date, time, guestCount)
+      .then(response => {
+        console.log(response.data);
+      });
+    console.log(name, phone, date, time, guestCount);
     setShowSuccessWindow(true);
     setName('');
     setPhone('');
@@ -78,7 +84,13 @@ export default function ReserveForm() {
   return (
     <>
       <div className='form-wrapper'>
-        <form name='reserve' className='reserve-form' onSubmit={handleSubmit} method='POST' netlify>
+        <form
+          name='reserve'
+          className='reserve-form'
+          onSubmit={handleSubmit}
+          method='POST'
+          netlify='true'
+        >
           <h3 className='form__title'>
             Заявка на бронь
             <br />
