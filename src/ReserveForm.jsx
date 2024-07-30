@@ -19,25 +19,23 @@ export default function ReserveForm() {
       return; // Если есть ошибки, не отправляем форму
     }
 
-    emailjs
-      .send(
-        'service_c0k1icq',
-        'template_z0x9fx9',
-        name,
-        phone,
-        date,
-        time,
-        guestCount,
-        comment
-      )
-      .then(
-        response => {
-          console.log('SUCCESS!', response.status, response.text);
-        },
-        error => {
-          console.log('FAILED...', error);
-        }
-      );
+    const templateParams = {
+      name,
+      phone,
+      date,
+      time,
+      guestCount,
+      comment,
+    };
+
+    emailjs.send('service_c0k1icq', 'template_z0x9fx9', templateParams).then(
+      response => {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      error => {
+        console.log('FAILED...', error);
+      }
+    );
 
     console.log(name, phone, date, time, guestCount);
     setShowSuccessWindow(true);
