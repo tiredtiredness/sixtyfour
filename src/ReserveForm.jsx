@@ -2,8 +2,24 @@ import axios from 'axios';
 import './ReserveForm.css';
 import { useState } from 'react';
 
+const monthNames = [
+  'янв',
+  'фев',
+  'мар',
+  'апр',
+  'май',
+  'июн',
+  'июл',
+  'авг',
+  'сен',
+  'окт',
+  'ноя',
+  'дек',
+];
+
 export default function ReserveForm() {
   const [showSuccessWindow, setShowSuccessWindow] = useState(false);
+  const [showErrorWindow, setShowErrorWindow] = useState(false);
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [date, setDate] = useState('');
@@ -19,10 +35,16 @@ export default function ReserveForm() {
       return; // Если есть ошибки, не отправляем форму
     }
 
+    const inputDate = new Date(date);
+    const inputDay = inputDate.getDate();
+    const inputMonth = inputDate.getMonth();
+    const inputYear = inputDate.getFullYear();
+    const formattedDate = `${inputDay} ${monthNames[inputMonth]} ${inputYear}`;
+
     const templateParams = {
       name,
       phone,
-      date,
+      date: formattedDate,
       time,
       guestCount,
       comment,
@@ -30,10 +52,10 @@ export default function ReserveForm() {
 
     emailjs.send('service_c0k1icq', 'template_z0x9fx9', templateParams).then(
       response => {
-        console.log('SUCCESS!', response.status, response.text);
+        setShowSuccessWindow(true);
       },
       error => {
-        console.log('FAILED...', error);
+        setShowErrorWindow(true);
       }
     );
 
@@ -81,18 +103,6 @@ export default function ReserveForm() {
   function handleDate(e) {
     const input = e.target.value;
     setDate(input);
-    let inputDate = new Date(input);
-    const today = new Date();
-
-    if (inputDate < today) {
-      const errorMsg = document.querySelector('.form__input#date').nextSibling;
-      errorMsg.classList.remove('hidden');
-      errorMsg.textContent = 'Некорректная дата';
-    } else if (inputDate >= today) {
-      document
-        .querySelector('.form__input#date')
-        .nextSibling.classList.add('hidden');
-    }
   }
 
   return (
@@ -212,9 +222,34 @@ export default function ReserveForm() {
             <p className='modal__desc'>
               Ваша заявка была отправлена. <br /> Ожидайте звонка для
               подтверждения бронирования.
+              <br />
+              <br />
+              Если в течение 15 минут с Вами не связались, <br />
+              попробуйте забронировать по телефону +7 (911) 000-64-00
             </p>
             <button
               onClick={() => setShowSuccessWindow(false)}
+              className='modal__close-btn'
+            >
+              <img
+                className='close-btn__img'
+                src='/images/icons/close-svgrepo-com.svg'
+                alt=''
+              />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {showErrorWindow && (
+        <div className='modal'>
+          <div className='modal__content'>
+            <h3 className='modal__title'>Возникла ошибка...</h3>
+            <p className='modal__desc'>
+              Попробуйте забронировать по телефону <br /> +7 (911) 000-64-00
+            </p>
+            <button
+              onClick={() => setShowErrorWindow(false)}
               className='modal__close-btn'
             >
               <img
