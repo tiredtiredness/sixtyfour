@@ -74,6 +74,11 @@ input::placeholder {
 
 .form__input {
   position: relative;
+  margin-top: 5px;
+}
+
+.form__textarea {
+  margin-top: 5px;
 }
 
 .modal {

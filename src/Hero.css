@@ -12,7 +12,6 @@
 
 .hero__title {
   text-align: center;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0);
   color: #fff;
   font-size: 30px;
 }
@@ -25,7 +24,6 @@
   margin-top: 10px;
   text-align: center;
   color: #fff;
-  text-shadow: 0px 0px 10px rgb(0, 0, 0);
   font-size: 20px;
 }
 
@@ -61,13 +59,12 @@ button > a {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .phone-btn:hover .phone-btn__link {
-  background-color: white;
+  background-color: transparent;
   color: transparent;
-  text-shadow: 0 0 0 #b9805d;
+  text-shadow: 0 0 0 white;
 }
 
 .phone-btn__link {
@@ -75,16 +72,21 @@ button > a {
   color: transparent;
   text-shadow: 0 0 0 white;
 }
-.phone-btn__link:hover {
+.phone-btn:hover .phone-btn__link:hover {
   color: transparent;
-  text-shadow: 0 0 0 #b9805d;
+  text-shadow: 0 0 0 white;
+}
+
+.phone-btn__link:hover {
+  background-color: transparent;
+  color: transparent;
+  text-shadow: 0 0 0 white;
 }
 
 .phone-btn:hover {
-  transform: rotate(20deg) scale(1.05);
+  background-color: transparent;
+  transform: rotate(20deg) scale(1.2);
   transition: transform ease-in-out 0.2s;
-  color: transparent;
-  text-shadow: 0 0 0 white;
 }
 
 .hero__img {

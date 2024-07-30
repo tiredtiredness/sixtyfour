@@ -116,12 +116,9 @@ export default function ReserveForm() {
           method='POST'
           data-netlify='true'
         >
-          <h3 className='form__title'>
-            Заявка на бронь
-            <br />
-            НА ДАННЫЙ МОМЕНТ НЕ РАБОТАЕТ
-          </h3>
+          <h3 className='form__title'>Заявка на бронь</h3>
           <label className='form__label' htmlFor=''>
+            Ваше имя
             <input
               className='form__input'
               type='text'
@@ -129,20 +126,19 @@ export default function ReserveForm() {
               value={name}
               id='name'
               required
-              placeholder='Ваше имя'
               maxLength='70'
               onChange={handleName}
             />
             <div className='input__error hidden'>Заполните поле</div>
           </label>
           <label className='form__label' htmlFor=''>
+            Ваш номер телефона
             <input
               className='form__input'
               type='tel'
               name='phone'
               id='phone'
               required
-              placeholder='Ваш номер телефона'
               value={phone}
               onChange={handlePhone}
             />
@@ -152,26 +148,27 @@ export default function ReserveForm() {
           </label>
           <div className='datetime__wrapper'>
             <label className='form__label' htmlFor=''>
+              Дата
               <input
                 className='form__input'
                 type='date'
                 name='date'
                 id='date'
                 required
-                placeholder='Дата'
                 value={date}
                 onChange={handleDate}
               />
               <div className='input__error hidden'>Заполните поле</div>
             </label>
             <label className='form__label' htmlFor=''>
+              Время
               <input
                 className='form__input'
                 type='time'
                 name='time'
                 id='time'
                 required
-                placeholder='Время'
+                placeholder
                 min='12:00'
                 max='22:00'
                 value={time}
@@ -184,13 +181,13 @@ export default function ReserveForm() {
           </div>
 
           <label className='form__label' htmlFor=''>
+            Количество гостей
             <input
               className='form__input'
               type='number'
               name='guestCount'
               id='guestCount'
               required
-              placeholder='Количество гостей'
               min='1'
               value={guestCount}
               onChange={e => {
@@ -199,16 +196,19 @@ export default function ReserveForm() {
             />
             <div className='input__error hidden'>Заполните поле</div>
           </label>
+          <label htmlFor=''>
+            Комментарий
+            <textarea
+            className='form__textarea'
+              name='comment'
+              id='comment'
+              value={comment}
+              onChange={e => {
+                setComment(e.target.value);
+              }}
+            ></textarea>
+          </label>
 
-          <textarea
-            name='comment'
-            id='comment'
-            placeholder='Комментарий'
-            value={comment}
-            onChange={e => {
-              setComment(e.target.value);
-            }}
-          ></textarea>
           <button className='reserve-form__submit-btn' type='submit'>
             Отправить
           </button>
