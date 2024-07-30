@@ -18,16 +18,9 @@ export default function ReserveForm() {
     if (errors.length > 0) {
       return; // Если есть ошибки, не отправляем форму
     }
-    // emailjs.sendForm(SERVICEID, TEMPLATEID, this).then(
-    //   () => {
-    //     alert('Sent!');
-    //   },
-    //   err => {
-    //     alert(JSON.stringify(err));
-    //   }
-    // );
+
     emailjs
-      .send(process.env.SERVICEID, process.env.TEMPLATEID, name, phone, date, time, guestCount, comment)
+      .send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, name, phone, date, time, guestCount, comment)
       .then(
         response => {
           console.log('SUCCESS!', response.status, response.text);
@@ -36,6 +29,7 @@ export default function ReserveForm() {
           console.log('FAILED...', error);
         }
       );
+      
     console.log(name, phone, date, time, guestCount);
     setShowSuccessWindow(true);
     setName('');
