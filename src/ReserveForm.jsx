@@ -18,11 +18,24 @@ export default function ReserveForm() {
     if (errors.length > 0) {
       return; // Если есть ошибки, не отправляем форму
     }
-    axios
-      .post('/api/sendmail', name, phone, date, time, guestCount)
-      .then(response => {
-        console.log(response.data);
-      });
+    // emailjs.sendForm(SERVICEID, TEMPLATEID, this).then(
+    //   () => {
+    //     alert('Sent!');
+    //   },
+    //   err => {
+    //     alert(JSON.stringify(err));
+    //   }
+    // );
+    emailjs
+      .send(SERVICEID, TEMPLATEID, name, phone, date, time, guestCount, comment)
+      .then(
+        response => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        error => {
+          console.log('FAILED...', error);
+        }
+      );
     console.log(name, phone, date, time, guestCount);
     setShowSuccessWindow(true);
     setName('');
@@ -86,6 +99,7 @@ export default function ReserveForm() {
       <div className='form-wrapper'>
         <form
           name='reserve'
+          id='reserve'
           className='reserve-form'
           onSubmit={handleSubmit}
           method='POST'
@@ -100,7 +114,7 @@ export default function ReserveForm() {
             <input
               className='form__input'
               type='text'
-              name='name'
+              name='from_name'
               value={name}
               id='name'
               required
@@ -111,7 +125,6 @@ export default function ReserveForm() {
             <div className='input__error hidden'>Заполните поле</div>
           </label>
           <label className='form__label' htmlFor=''>
-            
             <input
               className='form__input'
               type='tel'
@@ -163,7 +176,7 @@ export default function ReserveForm() {
             <input
               className='form__input'
               type='number'
-              name='guestCount'
+              name='guest_count'
               id='guestCount'
               required
               placeholder='Количество гостей'
