@@ -89,7 +89,7 @@ export default function ReserveForm() {
           className='reserve-form'
           onSubmit={handleSubmit}
           method='POST'
-          netlify='true'
+          data-netlify='true'
         >
           <h3 className='form__title'>
             Заявка на бронь
@@ -111,7 +111,7 @@ export default function ReserveForm() {
             <div className='input__error hidden'>Заполните поле</div>
           </label>
           <label className='form__label' htmlFor=''>
-            {' '}
+            
             <input
               className='form__input'
               type='tel'
