@@ -27,7 +27,7 @@ export default function ReserveForm() {
     //   }
     // );
     emailjs
-      .send(SERVICEID, TEMPLATEID, name, phone, date, time, guestCount, comment)
+      .send(process.env.SERVICEID, process.env.TEMPLATEID, name, phone, date, time, guestCount, comment)
       .then(
         response => {
           console.log('SUCCESS!', response.status, response.text);
