@@ -78,7 +78,7 @@ export default function ReserveForm() {
   return (
     <>
       <div className='form-wrapper'>
-        <form className='reserve-form' onSubmit={handleSubmit} netlify>
+        <form name='reserve' className='reserve-form' onSubmit={handleSubmit} method='POST' netlify>
           <h3 className='form__title'>
             Заявка на бронь
             <br />
