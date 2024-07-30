@@ -20,7 +20,16 @@ export default function ReserveForm() {
     }
 
     emailjs
-      .send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, name, phone, date, time, guestCount, comment)
+      .send(
+        'service_c0k1icq',
+        'template_z0x9fx9',
+        name,
+        phone,
+        date,
+        time,
+        guestCount,
+        comment
+      )
       .then(
         response => {
           console.log('SUCCESS!', response.status, response.text);
@@ -29,7 +38,7 @@ export default function ReserveForm() {
           console.log('FAILED...', error);
         }
       );
-      
+
     console.log(name, phone, date, time, guestCount);
     setShowSuccessWindow(true);
     setName('');
