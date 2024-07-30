@@ -18,7 +18,6 @@ export default function ReserveForm() {
     if (errors.length > 0) {
       return; // Если есть ошибки, не отправляем форму
     }
-    console.log(name, phone, date, time, guestCount, comment);
     setShowSuccessWindow(true);
     setName('');
     setPhone('');
@@ -80,7 +79,11 @@ export default function ReserveForm() {
     <>
       <div className='form-wrapper'>
         <form className='reserve-form' onSubmit={handleSubmit}>
-          <h3 className='form__title'>Заявка на бронь</h3>
+          <h3 className='form__title'>
+            Заявка на бронь
+            <br />
+            НА ДАННЫЙ МОМЕНТ НЕ РАБОТАЕТ
+          </h3>
           <label className='form__label' htmlFor=''>
             <input
               className='form__input'

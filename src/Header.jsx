@@ -34,13 +34,13 @@ export default function Header() {
               </li>
               <li className='menu-list__item'>
                 <a
-                  href='/osn.pdf'
+                  href='/menu.pdf'
                   className='menu-list__link--menu menu-list__link'
                 >
                   Меню
                 </a>
               </li>
-              <li className='menu-list__item'>
+              {/* <li className='menu-list__item'>
                 <NavLink
                   className='menu-list__link'
                   href=''
@@ -49,7 +49,7 @@ export default function Header() {
                 >
                   Новости
                 </NavLink>
-              </li>
+              </li> */}
               <li className='menu-list__item'>
                 <NavLink
                   className='menu-list__link'

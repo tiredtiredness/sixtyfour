@@ -69,7 +69,7 @@
   margin-top: 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .about__section:nth-child(2n-1) {
     flex-flow: row;
   }
@@ -81,6 +81,9 @@
     padding: 20px;
     text-align: center;
   }
+  .section__wrapper:last-child {
+    padding: 20px 0;
+  }
 
   .section__desc {
     text-align: justify;
@@ -88,15 +91,9 @@
   .section__img,
   .section__video {
     max-height: 90vh;
-    width: auto;
+    width: 100%;
   }
   a .section__scroll-btn {
     text-align: center;
-  }
-}
-
-@media (max-width: 800px) {
-  .section__wrapper {
-    padding: 20px;
   }
 }

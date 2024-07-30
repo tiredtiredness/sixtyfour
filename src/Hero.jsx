@@ -16,8 +16,6 @@ export default function Hero() {
         <div className='hero__wrapper'>
           <h1 className='hero__title animate__animated animate__fadeInDown animate__delay-2s animate__slow'>
             РЕСТОРАН ЕВРОПЕЙСКОЙ КУХНИ
-            ЭТО ПОДДЕЛКА 
-            ЭТО НЕОФИЦИАЛЬНЫЙ САЙТ
           </h1>
           <div className='desc__wrapper animate__animated animate__fadeInUp animate__delay-2s animate__slow'>
             <p className='hero__desc '>
@@ -38,7 +36,7 @@ export default function Hero() {
           </a>
         </button>
       </div>
-      <div className='gallery'>
+      {/* <div className='gallery'>
         <div className='gallery__wrapper'>
           <img className='gallery__img' src='/images/gallery/1.jpg' alt='' />
         </div>
@@ -147,7 +145,7 @@ export default function Hero() {
             <source src='/images/gallery/IMG_4.MP4' />
           </video>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

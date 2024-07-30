@@ -17,14 +17,15 @@ export default function Contacts() {
         <div className='contacts__wrapper'>
           <div className='contacts__info'>
             <p className='contacts__address'>
-              г. Санкт-Петербург, наб. реки Мойки, 64
+              Адрес: г. Санкт-Петербург, наб. реки Мойки, 64
             </p>
-            <p className='contacts__phone'>+7 (911) 000-64-00</p>
+            <p className='contacts__phone'>Телефон: +7 (911) 000-64-00</p>
             <p className='contacts__hours'>
               Часы работы: ежедневно, 12:00–23:00
             </p>
-            <p className='contacts__email'>Почта: TBA TBD soon</p>
+            {/* <p className='contacts__email'>Почта: TBA TBD soon</p> */}
             <div className='contacts__socials'>
+              <p>Соцсети: </p>
               <a
                 href='https://www.instagram.com/64rest'
                 target='_blank'
