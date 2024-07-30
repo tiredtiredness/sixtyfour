@@ -115,7 +115,7 @@ export default function ReserveForm() {
             <input
               className='form__input'
               type='text'
-              name='from_name'
+              name='name'
               value={name}
               id='name'
               required
@@ -177,7 +177,7 @@ export default function ReserveForm() {
             <input
               className='form__input'
               type='number'
-              name='guest_count'
+              name='guestCount'
               id='guestCount'
               required
               placeholder='Количество гостей'
