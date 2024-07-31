@@ -1,5 +1,5 @@
 .form-wrapper {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   margin: 15px;
   padding: 15px;
 }
@@ -20,6 +20,7 @@
 
 .form__title {
   color: #1e415e;
+  text-transform: uppercase;
 }
 
 .reserve-form input#date,

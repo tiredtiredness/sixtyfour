@@ -33,12 +33,20 @@ export default function Header() {
                 </NavLink>
               </li>
               <li className='menu-list__item'>
-                <a
+                {/* <a
                   href='/menu.pdf'
                   className='menu-list__link--menu menu-list__link'
                 >
                   Меню
-                </a>
+                </a> */}
+                <NavLink
+                  className='menu-list__link'
+                  href=''
+                  to='menu'
+                  onClick={toggleMenu}
+                >
+                  Меню
+                </NavLink>
               </li>
               {/* <li className='menu-list__item'>
                 <NavLink

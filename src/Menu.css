@@ -1,0 +1,11 @@
+.menu-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 15px;
+}
+
+.menu-bar img {
+  display: block;
+  width: 100%;
+}

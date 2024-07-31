@@ -52,12 +52,18 @@
   left: 0;
   animation: left-shift 3s linear forwards;
   animation-delay: 1s;
+  -webkit-box-shadow: 5px 0px 10px -5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 5px 0px 10px -5px rgba(0, 0, 0, 0.7);
+  box-shadow: 5px 0px 10px -5px rgba(0, 0, 0, 0.7);
 }
 
 .intro__right-side {
   right: 0;
   animation: right-shift 3s linear forwards;
   animation-delay: 1s;
+  -webkit-box-shadow: -5px 0px 10px -5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -5px 0px 10px -5px rgba(0, 0, 0, 0.7);
+  box-shadow: -5px 0px 10px -5px rgba(0, 0, 0, 0.7);
 }
 
 @keyframes left-shift {

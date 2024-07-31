@@ -116,7 +116,7 @@ export default function ReserveForm() {
           method='POST'
           data-netlify='true'
         >
-          <h3 className='form__title'>Заявка на бронь</h3>
+          <h2 className='form__title'>Заявка на бронь</h2>
           <label className='form__label' htmlFor=''>
             Ваше имя
             <input

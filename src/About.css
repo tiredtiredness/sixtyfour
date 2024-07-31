@@ -28,7 +28,7 @@
 }
 
 .section__wrapper:first-child {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .section__wrapper:last-child {
   padding: 0;
@@ -38,6 +38,7 @@
   color: #1e415e;
   margin-bottom: 15px;
   font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 .section__desc {

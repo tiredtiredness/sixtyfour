@@ -11,7 +11,7 @@
 }
 
 .contacts__wrapper:last-child {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .contacts__map {
@@ -68,7 +68,7 @@
     height: auto;
   }
   .contacts__map {
-    height: 50vh;
+    height: 54vh;
   }
   .contacts__info {
     margin-left: 0;
