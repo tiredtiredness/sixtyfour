@@ -102,7 +102,22 @@ export default function ReserveForm() {
 
   function handleDate(e) {
     const input = e.target.value;
-    setDate(input);
+    setGuestCount(input);
+  }
+
+  function handleGuestCount(e) {
+    const input = e.target.value;
+    console.log(input);
+    setGuestCount(input);
+    if (input > 7) {
+      document
+        .querySelector('.form__input#guestCount')
+        .nextSibling.classList.remove('hidden');
+    } else {
+      document
+        .querySelector('.form__input#guestCount')
+        .nextSibling.classList.add('hidden');
+    }
   }
 
   return (
@@ -190,16 +205,17 @@ export default function ReserveForm() {
               required
               min='1'
               value={guestCount}
-              onChange={e => {
-                setGuestCount(e.target.value);
-              }}
+              onChange={handleGuestCount}
             />
+            <p className='input__msg hidden'>
+              При бронировании от 8 человек действует сервисный сбор 10%
+            </p>
             <div className='input__error hidden'>Заполните поле</div>
           </label>
           <label htmlFor=''>
             Комментарий
             <textarea
-            className='form__textarea'
+              className='form__textarea'
               name='comment'
               id='comment'
               value={comment}

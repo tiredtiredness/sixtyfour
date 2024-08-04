@@ -36,116 +36,41 @@ export default function Hero() {
           </a>
         </button>
       </div>
-      {/* <div className='gallery'>
+      <div className='gallery'>
         <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/1.jpg' alt='' />
+          <img src='/images/gallery/1.jpg' alt='' className='gallery__item' />
+          <img src='/images/gallery/2.jpg' alt='' className='gallery__item' />
+          <img src='/images/gallery/3.jpg' alt='' className='gallery__item' />
+          <img src='/images/gallery/4.jpg' alt='' className='gallery__item' />
+          <img src='/images/gallery/5.jpg' alt='' className='gallery__item' />
         </div>
         <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/2.jpg' alt='' />
+          <img src='/images/gallery/6.jpg' alt='' className='gallery__item' />
+          <img src='/images/gallery/7.jpg' alt='' className='gallery__item' />
+          <img src='/images/gallery/8.jpg' alt='' className='gallery__item' />
+          <img src='/images/gallery/9.jpg' alt='' className='gallery__item' />
+          <img src='/images/gallery/10.jpg' alt='' className='gallery__item' />
+        </div>
+        <img
+          src='public/images/gallery/w0n5bArwFRs.jpg'
+          alt=''
+          className='gallery__item--entire'
+        />
+        <div className='gallery__wrapper'>
+          <img src='' alt='' className='gallery__item' />
+          <img src='' alt='' className='gallery__item' />
+          <img src='' alt='' className='gallery__item' />
+          <img src='' alt='' className='gallery__item' />
+          <img src='' alt='' className='gallery__item' />
         </div>
         <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/3.jpg' alt='' />
+          <img src='' alt='' className='gallery__item' />
+          <img src='' alt='' className='gallery__item' />
+          <img src='' alt='' className='gallery__item' />
+          <img src='' alt='' className='gallery__item' />
+          <img src='' alt='' className='gallery__item' />
         </div>
-        <div className='gallery__wrapper'>
-          <video
-            className='gallery__img'
-            src='/images/gallery/IMG_2.MP4'
-            autoPlay='autoplay'
-            loop
-            muted
-            playsInline
-            preload='true'
-            alt=''
-          >
-            <source src='' />
-          </video>
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/4.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/5.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/6.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/7.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <video
-            className='gallery__img'
-            autoPlay='autoplay'
-            loop
-            muted
-            playsInline
-            preload
-            alt=''
-          >
-            <source src='/images/gallery/IMG_3.MP4' />
-          </video>
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/8.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/9.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/10.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/11.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/12.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <video
-            className='gallery__img'
-            autoPlay='autoplay'
-            loop
-            muted
-            playsInline
-            preload
-            alt=''
-          >
-            <source src='/images/gallery/IMG_1.MP4' />
-          </video>
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/13.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/14.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/15.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/16.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/17.jpg' alt='' />
-        </div>
-        <div className='gallery__wrapper'>
-          <img className='gallery__img' src='/images/gallery/18.jpg' alt='' />
-        </div>
-
-        <div className='gallery__wrapper'>
-          <video
-            className='gallery__img'
-            autoPlay='autoplay'
-            loop
-            muted
-            playsInline
-            preload
-            alt=''
-          >
-            <source src='/images/gallery/IMG_4.MP4' />
-          </video>
-        </div>
-      </div> */}
+      </div>
     </>
   );
 }

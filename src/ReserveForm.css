@@ -73,6 +73,12 @@ input::placeholder {
   color: red;
 }
 
+.input__msg {
+  margin-top: 2px;
+  color: #1e415e;
+  font-size: 14px;
+}
+
 .form__input {
   position: relative;
   margin-top: 5px;

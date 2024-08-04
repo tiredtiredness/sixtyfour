@@ -7,7 +7,7 @@ export default function About() {
       <div className='about'>
         <section id='atmosphere' className='about__section'>
           <div className='section__wrapper'>
-            <h2 className='section__title'>Наша атмосфера и сервис</h2>
+            <h2 className='section__title'>Атмосфера и сервис</h2>
             <p className='section__desc'>
               Наши большие окна в пол и уютное пространство давно стали
               неотъемлемой частью культурных символов набережной Мойки. Сервис
@@ -24,7 +24,7 @@ export default function About() {
             </p>
             <a href='#location'>
               <img
-                src='images/icons/arrow-down-svgrepo-com.svg'
+                src='/images/icons/MaterialSymbolsLightKeyboardArrowDown.svg'
                 alt=''
                 className='section__scroll-btn'
               />
@@ -51,7 +51,7 @@ export default function About() {
             </p>
             <a href='#menu'>
               <img
-                src='images/icons/arrow-down-svgrepo-com.svg'
+                src='/images/icons/MaterialSymbolsLightKeyboardArrowDown.svg'
                 alt=''
                 className='section__scroll-btn'
               />
@@ -84,7 +84,7 @@ export default function About() {
             </p>
             <a href='#bar'>
               <img
-                src='images/icons/arrow-down-svgrepo-com.svg'
+                src='/images/icons/MaterialSymbolsLightKeyboardArrowDown.svg'
                 alt=''
                 className='section__scroll-btn'
               />
@@ -107,7 +107,7 @@ export default function About() {
             </p>
             <a href='#events'>
               <img
-                src='images/icons/arrow-down-svgrepo-com.svg'
+                src='/images/icons/MaterialSymbolsLightKeyboardArrowDown.svg'
                 alt=''
                 className='section__scroll-btn'
               />
@@ -137,7 +137,7 @@ export default function About() {
             </p>
             <a href='#catering'>
               <img
-                src='images/icons/arrow-down-svgrepo-com.svg'
+                src='/images/icons/MaterialSymbolsLightKeyboardArrowDown.svg'
                 alt=''
                 className='section__scroll-btn'
               />
@@ -167,7 +167,7 @@ export default function About() {
             </p>
             <a href='#'>
               <img
-                src='images/icons/arrow-down-svgrepo-com.svg'
+                src='/images/icons/MaterialSymbolsLightKeyboardArrowDown.svg'
                 alt=''
                 className='section__scroll-btn--last section__scroll-btn '
               />

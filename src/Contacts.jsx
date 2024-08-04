@@ -23,6 +23,10 @@ export default function Contacts() {
             <p className='contacts__hours'>
               Часы работы: ежедневно, 12:00–23:00
             </p>
+            <p className='contacts__hours'>
+              Последний заказ по кухне мы принимаем в 22:30,&#32; <span className='desc__wrap'>по бару — в
+              22:45</span>
+            </p>
             {/* <p className='contacts__email'>Почта: TBA TBD soon</p> */}
             <div className='contacts__socials'>
               <p>Соцсети: </p>

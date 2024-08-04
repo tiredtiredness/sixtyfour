@@ -13,8 +13,8 @@
   text-align: left;
 }
 
-.about__section:nth-child(2n) {
-  text-align: right;
+.about__section .section__title {
+  align-self: center;
 }
 
 .section__wrapper {
@@ -25,6 +25,7 @@
   flex-direction: column;
   justify-content: center;
   padding: calc(2em + 19px) 50px 50px 50px;
+  text-align: center;
 }
 
 .section__wrapper:first-child {
@@ -35,13 +36,20 @@
 }
 
 .section__title {
+  position: relative;
+  width: fit-content;
   color: #1e415e;
   margin-bottom: 15px;
+  padding: 5px 30px;
   font-size: 1.4rem;
+  font-weight: 500;
   text-transform: uppercase;
+  letter-spacing: 3px;
+  outline: 1px solid #1e415e;
 }
 
 .section__desc {
+  text-align: justify;
   color: black;
 }
 
@@ -54,8 +62,7 @@
 }
 
 .section__scroll-btn {
-  margin-top: 10px;
-  width: 40px;
+  width: 50px;
 }
 
 .section__scroll-btn:hover {
