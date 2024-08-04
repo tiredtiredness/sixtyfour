@@ -36,7 +36,7 @@ export default function Hero() {
           </a>
         </button>
       </div>
-      <div className='gallery'>
+      {/* <div className='gallery'>
         <div className='gallery__wrapper'>
           <img src='/images/gallery/1.jpg' alt='' className='gallery__item' />
           <img src='/images/gallery/2.jpg' alt='' className='gallery__item' />
@@ -70,7 +70,7 @@ export default function Hero() {
           <img src='' alt='' className='gallery__item' />
           <img src='' alt='' className='gallery__item' />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
