@@ -84,6 +84,11 @@
   margin-top: 0;
 }
 
+.accent {
+  font-weight: bold;
+  color: #1e415e;
+}
+
 @media (max-width: 800px) {
   .about__section:nth-child(2n-1) {
     flex-flow: row;
