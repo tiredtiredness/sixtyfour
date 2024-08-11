@@ -51,6 +51,7 @@
 .section__desc {
   text-align: justify;
   color: black;
+  line-height: 1.4;
 }
 
 .section__img,

@@ -102,7 +102,7 @@ export default function ReserveForm() {
 
   function handleDate(e) {
     const input = e.target.value;
-    setGuestCount(input);
+    setDate(input);
   }
 
   function handleGuestCount(e) {
