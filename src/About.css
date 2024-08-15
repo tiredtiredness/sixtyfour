@@ -49,9 +49,9 @@
 }
 
 .section__desc {
-  text-align: justify;
+  text-align: left;
   color: black;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .section__img,
